@@ -1,0 +1,16 @@
+Feature,Description
+loan_amnt,Loan amount requested by the borrower
+funded_amnt,Loan amount actually approved
+term,Repayment term (36 or 60 months)
+int_rate,Interest rate of the loan
+installment,Monthly installment payment
+grade,Loan grade assigned by lender (A–G)
+sub_grade,"Detailed loan grade (e.g., A1, B2, etc.)"
+emp_length,Employment length of borrower
+home_ownership,Home ownership status
+annual_inc,Annual income of borrower
+dti,Debt-to-Income ratio
+revol_util,Revolving credit utilization rate
+open_acc,Number of open credit lines
+pub_rec,Number of derogatory public records
+loan_status,Target variable: repayment status

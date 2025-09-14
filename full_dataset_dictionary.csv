@@ -1,0 +1,75 @@
+Column,Type,Description
+id,int64,Unique loan identifier
+member_id,int64,Unique borrower identifier
+loan_amnt,float64,Loan amount requested by borrower
+funded_amnt,float64,Loan amount approved
+funded_amnt_inv,float64,Loan amount funded by investors
+term,object,Loan term (36 or 60 months)
+int_rate,float64,Interest rate on the loan
+installment,float64,Monthly repayment installment
+grade,object,Loan grade assigned by lender
+sub_grade,object,Detailed loan sub-grade
+emp_title,object,Borrower’s job title
+emp_length,object,Employment length (in years)
+home_ownership,object,"Home ownership status (Rent, Own, Mortgage, etc.)"
+annual_inc,float64,Annual income of borrower
+verification_status,object,Income verification status
+issue_d,object,Loan issue date
+loan_status,object,Target column – repayment status
+pymnt_plan,object,Whether borrower is on a payment plan
+url,object,Loan application URL (not useful for modeling)
+desc,object,Borrower description of loan
+purpose,object,"Loan purpose (e.g., debt consolidation, medical, etc.)"
+title,object,Loan title (self-reported)
+zip_code,object,Borrower ZIP code
+addr_state,object,Borrower’s state
+dti,float64,Debt-to-Income ratio
+delinq_2yrs,float64,Delinquencies in past 2 years
+earliest_cr_line,object,Borrower’s earliest credit line date
+inq_last_6mths,float64,Credit inquiries in last 6 months
+mths_since_last_delinq,float64,Months since last delinquency
+mths_since_last_record,float64,Months since last public record
+open_acc,float64,Number of open credit lines
+pub_rec,float64,Number of derogatory public records
+revol_bal,float64,Total credit revolving balance
+revol_util,float64,Revolving credit utilization rate
+total_acc,float64,Total number of credit lines
+initial_list_status,object,Initial listing status of the loan
+out_prncp,float64,Outstanding principal of loan
+out_prncp_inv,float64,Outstanding principal funded by investors
+total_pymnt,float64,Total payment received
+total_pymnt_inv,float64,Total payment received by investors
+total_rec_prncp,float64,Total principal received
+total_rec_int,float64,Total interest received
+total_rec_late_fee,float64,Total late fees received
+recoveries,float64,Amount recovered from charge-offs
+collection_recovery_fee,float64,Collection fees charged
+last_pymnt_d,object,Last payment date
+last_pymnt_amnt,float64,Last payment amount
+next_pymnt_d,object,Next scheduled payment date
+last_credit_pull_d,object,Last credit pull date
+collections_12_mths_ex_med,float64,Collections in last 12 months (excluding medical)
+mths_since_last_major_derog,float64,Months since last major derogatory event
+policy_code,float64,"Policy code (always 1, not useful)"
+application_type,object,Individual or joint application
+annual_inc_joint,float64,Combined annual income (for joint applications)
+dti_joint,float64,Combined Debt-to-Income ratio (for joint applications)
+verification_status_joint,object,Joint income verification status
+acc_now_delinq,float64,Accounts currently delinquent
+tot_coll_amt,float64,Total collection amount
+tot_cur_bal,float64,Total current balance
+open_acc_6m,float64,Open accounts in last 6 months
+open_il_6m,float64,Installment accounts opened in last 6 months
+open_il_12m,float64,Installment accounts opened in last 12 months
+open_il_24m,float64,Installment accounts opened in last 24 months
+mths_since_rcnt_il,float64,Months since most recent installment loan
+total_bal_il,float64,Total balance on installment loans
+il_util,float64,Installment loan utilization rate
+open_rv_12m,float64,Revolving accounts opened in last 12 months
+open_rv_24m,float64,Revolving accounts opened in last 24 months
+max_bal_bc,float64,Maximum balance on bankcard
+all_util,float64,Balance to credit limit ratio
+total_rev_hi_lim,float64,Total revolving credit limit
+inq_fi,float64,Credit inquiries for finance-related purposes
+total_cu_tl,float64,Number of credit union accounts
+inq_last_12m,float64,Credit inquiries in last 12 months
